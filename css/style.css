@@ -312,6 +312,18 @@ a {
   width: 100%;
   border-radius: 40%;
 }
+.active-mobile {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #defee8;
+  padding: 5px 8px;
+  border-radius: 10px;
+  display: none;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .side-bar {
     width: 80px;
@@ -422,5 +434,14 @@ a {
     height: 15px;
     top: -5px;
     right: -5px;
+  }
+  .header-logo {
+    width: 100%;
+  }
+  .active {
+    display: none;
+  }
+  .active-mobile {
+    display: flex;
   }
 }
