@@ -258,6 +258,13 @@ a {
   border: 1px solid #e5e7eb;
   border-radius: 15px;
 }
+.icon-search:hover {
+  background-color: #f9fafb;
+}
+.icon-sub:hover {
+  background-color: #f9fafb;
+}
+
 .icon-sub {
   width: 40px;
   height: 40px;
@@ -320,6 +327,9 @@ a {
   width: 40px;
   height: 40px;
 }
+.account-info:hover {
+  box-shadow: 0 4px 0 #f2f8ff;
+}
 .account-info-img img {
   width: 100%;
   border-radius: 40%;
@@ -343,6 +353,64 @@ a {
   background-color: #21d066;
   animation: color-change 3s infinite;
   display: none;
+}
+.small-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 0 0 20px 0;
+}
+.account-mony-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 32px;
+  border: 2px solid #f2f3f5;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: start;
+  background-color: #fff;
+}
+.account-mony-info-span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.account-mony-info-span svg {
+  width: 15px;
+  height: 15px;
+}
+.small-pra {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6a7282;
+  margin: 0;
+}
+.big-pra {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+.span-mony-color-green {
+  color: #00a663;
+}
+.span-mony-color-red {
+  color: #e7000b;
+}
+.new-active {
+  padding: 24px;
+  border: 2px solid #f2f3f5;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .side-bar {
@@ -403,6 +471,16 @@ a {
   .header {
     padding: 16px;
     gap: 16px;
+  }
+
+  .big-pra {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+  }
+  .account-mony-info {
+    padding: 24px;
   }
 }
 @media (max-width: 767px) {
@@ -466,5 +544,20 @@ a {
   }
   .green-dot-mobile {
     display: flex;
+  }
+  .small-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 0 0 20px 0;
+  }
+  .big-pra {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+  }
+  .account-mony-info {
+    padding: 24px;
   }
 }
