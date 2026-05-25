@@ -219,6 +219,18 @@ a {
   height: 7px;
   border-radius: 50%;
   background-color: #21d066;
+  animation: color-change 3s infinite;
+}
+@keyframes color-change {
+  0% {
+    background-color: #21d066;
+  }
+  50% {
+    background-color: #78e3a2;
+  }
+  100% {
+    background-color: #21d066;
+  }
 }
 .active span {
   color: #008236;
@@ -322,6 +334,14 @@ a {
   background-color: #defee8;
   padding: 5px 8px;
   border-radius: 10px;
+  display: none;
+}
+.green-dot-mobile {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #21d066;
+  animation: color-change 3s infinite;
   display: none;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -442,6 +462,9 @@ a {
     display: none;
   }
   .active-mobile {
+    display: flex;
+  }
+  .green-dot-mobile {
     display: flex;
   }
 }
