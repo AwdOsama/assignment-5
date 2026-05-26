@@ -403,14 +403,267 @@ a {
 .span-mony-color-red {
   color: #e7000b;
 }
+.big-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "new-active . ."
+    "month-bill . .";
+}
 .new-active {
   padding: 24px;
-  border: 2px solid #f2f3f5;
+  border: 1px solid #f2f3f5;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  border-radius: 16px;
+  grid-area: new-active;
+  margin: 0 0 15px 0;
+}
+
+.new-active h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.cards-new-active {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f2f3f5;
+}
+
+.card-new {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.card-new-bg-blue {
+  background-color: #f3f7fd;
+}
+.card-new-bg-grean {
+  background-color: #f0fdf4;
+}
+.card-new-border-color-blue {
+  border-left: 4px solid #155dfc;
+}
+.card-new-norder-color-bg-grean {
+  border-left: 4px solid #00c950;
+}
+
+.card-new-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.card-new-icon-bg-blue {
+  background-color: #e2ecfc;
+}
+.card-new-icon-bg-grean {
+  background-color: #dbfce7;
+}
+
+.card-new-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.card-new-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.card-new-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-new-header h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.card-new-header span {
+  font-size: 13px;
+  font-weight: 600;
+}
+.card-new-header-span-color-blue {
+  color: #155dfc;
+}
+.card-new-header-span-color-green {
+  color: #00a63e;
+}
+.card-new-content p {
+  margin: 2px 0 0 0;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.card-new-time {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+.footer-new-active {
+  background-color: #fff;
+  color: #155dfc;
+  border: none;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.footer-new-active:hover {
+  color: #0731b0;
+}
+.month-bill {
+  grid-area: month-bill;
+  padding: 24px;
+  border: 1px solid #f2f3f5;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.month-bill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.month-bill-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.month-bill-header span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.pra-big-text-center {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 4px 0;
+}
+
+.pra-small-text-center {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.month-bill-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.bill-card {
+  width: calc(50% - 16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding:  12px;
+  background-color: #f8fafc;
+  border-radius: 16px;
+  margin-bottom: 0;
+}
+.bill-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.bill-card-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+.bill-card .word {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0 0 4px 0;
+}
+
+.bill-card .mony {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 6px 0;
+}
+
+.bill-card .time {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-new-bg-blue {
+  background-color: #e2ecfc;
+}
+
+.card-new-bg-yellow {
+  background-color: #fef3c7;
+}
+
+.card-new-bg-red {
+  background-color: #fee2e2;
+}
+
+.card-new-bg-green {
+  background-color: #d1fae5;
+}
+
+.time-danger {
+  color: #dc2626;
+}
+.time-primary {
+  color:#FF6900;
+}
+.time-warning {
+  color: #4b5563;
+}
+
+.time-success {
+  color: #10b981;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .side-bar {
