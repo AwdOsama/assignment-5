@@ -408,8 +408,10 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas:
-    "new-active . ."
-    "month-bill . .";
+    "new-active last-prosses last-prosses"
+    "month-bill last-prosses last-prosses";
+  column-gap: 35px;
+  row-gap: 15px;
 }
 .new-active {
   padding: 24px;
@@ -419,7 +421,7 @@ a {
   flex-direction: column;
   border-radius: 16px;
   grid-area: new-active;
-  margin: 0 0 15px 0;
+  margin: 0;
 }
 
 .new-active h3 {
@@ -541,6 +543,7 @@ a {
   border: 1px solid #f2f3f5;
   background-color: #fff;
   border-radius: 20px;
+  margin: 0;
 }
 
 .month-bill-header {
@@ -596,7 +599,7 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding:  12px;
+  padding: 12px;
   background-color: #f8fafc;
   border-radius: 16px;
   margin-bottom: 0;
@@ -656,7 +659,7 @@ a {
   color: #dc2626;
 }
 .time-primary {
-  color:#FF6900;
+  color: #ff6900;
 }
 .time-warning {
   color: #4b5563;
@@ -664,6 +667,199 @@ a {
 
 .time-success {
   color: #10b981;
+}
+.last-prosses {
+  padding: 24px;
+  border: 1px solid #f2f3f5;
+  background-color: #fff;
+  grid-area: last-prosses;
+  border-radius: 16px;
+}
+.last-prosses-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.last-prosses-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.last-prosses-header span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  cursor: pointer;
+}
+.last-prosses-table {
+  overflow: auto;
+  width: 100%;
+}
+.table {
+  width: 100%;
+}
+.table th {
+  padding: 12px 8px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+}
+.table td {
+  padding: 16px 8px;
+}
+.table tr {
+  border-bottom: 1px solid #f2f3f5;
+}
+.table-span-bg-green {
+  background-color: #dbfce7;
+}
+.td-span-color-green {
+  color: #016630;
+}
+.td-span-price-color-green {
+  color: #00a63e;
+}
+.td-icon-bg-orange {
+  background-color: #ffedd4;
+}
+.td-span-icon-color-orange {
+  color: #9f2d00;
+}
+.td-img-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+.td-img-text img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.td-big-pra {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.td-small-pra {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6a7882;
+}
+.td-span-icon {
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  gap: 5px;
+  border-radius: 15px;
+  justify-content: center;
+  width: fit-content;
+}
+.td-span-icon svg {
+  width: 15px;
+  height: 15px;
+}
+.history {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a6465;
+}
+.td-span-text {
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 16px;
+  padding: 2px 10px;
+}
+.td-span-price {
+  font-size: 14px;
+  font-weight: 600;
+}
+.td-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.td-icon svg {
+  width: 20px;
+  height: 20px;
+}
+.td-span-price-color-black {
+  color: #111827;
+}
+
+.table-span-bg-blue {
+  background-color: #e0f2fe;
+}
+.td-span-icon-color-blue {
+  color: #0369a1;
+}
+.td-icon-bg-blue {
+  background-color: #e0f2fe;
+}
+
+.table-span-bg-purple {
+  background-color: #f3e8ff;
+}
+.td-span-icon-color-purple {
+  color: #7e22ce;
+}
+
+.table-span-bg-red {
+  background-color: #ffe4e6;
+}
+.td-span-icon-color-red {
+  color: #be123c;
+}
+.td-icon-bg-red {
+  background-color: #ffe4e6;
+}
+
+.table-span-bg-yellow {
+  background-color: #fef3c7;
+}
+.td-span-color-yellow {
+  color: #b45309;
+}
+
+.table-span-bg-indigo {
+  background-color: #e0e7ff;
+}
+.td-span-icon-color-indigo {
+  color: #4338ca;
+}
+.td-icon-bg-indigo {
+  background-color: #e0e7ff;
+}
+
+.table-span-bg-cyan {
+  background-color: #ccfbf1;
+}
+.td-span-icon-color-cyan {
+  color: #0f766e;
+}
+.td-icon-bg-cyan {
+  background-color: #ccfbf1;
+}
+
+.table-span-bg-lightgreen {
+  background-color: #dcfce7;
+}
+.td-span-icon-color-lightgreen {
+  color: #15803d;
+}
+.td-icon-bg-lightgreen {
+  background-color: #dcfce7;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .side-bar {
