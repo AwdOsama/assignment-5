@@ -1746,6 +1746,7 @@ a {
     scroll-behavior: smooth;
   }
   .last-prosses-table {
-    width: 600px;
+    width: 100%;
+    min-width: 600px;
   }
 }
