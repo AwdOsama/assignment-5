@@ -1523,8 +1523,9 @@ a {
   letter-spacing: 2px;
 }
 .card-flip {
-  width: 350px;
+  width: 100%;
   height: 220px;
+  max-width: 350px;
   perspective: 1500px;
 }
 
